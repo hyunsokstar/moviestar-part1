@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style/reset.css" />
-    <!-- <link rel="stylesheet" href="src/style/app.css" /> -->
+    <link rel="stylesheet" href="src/style/app.css" />
 
     <title>영화 별점 평가 하기</title>
   </head>
@@ -21,7 +21,10 @@
         <section class="movie">
           <div class="poster-container">
             <!-- <img src="" alt="" /> -->
-            <img src="./src/assets/images/poster_bootcamp.png" alt="영화 포스터" />
+            <img
+              src="./src/assets/images/poster_bootcamp.png"
+              alt="영화 포스터"
+            />
           </div>
           <div class="content">
             <div class="content-type">
@@ -32,27 +35,54 @@
             <h3 class="content-title">파이썬 부트캠프</h3>
             <div class="content-favorite">
               <button class="button-recommend">
-                <span>추천합니다</span>
-                <i class="icon-thumbs-up"></i>
+                <!-- <span>추천합니다</span> -->
+                <i class="icon-thumbs-up">추천 하기</i>
               </button>
               <button>
-                <span>찜하기</span>
-                <i class="icon-heart"></i>
+                <i class="icon-heart">찜 하기</i>
               </button>
             </div>
             <div class="content-star">
               <em class="star-average">별점 평균 4.5</em>
               <div class="star-point-container">
                 <div class="star-background">
-                  <img src="" alt="1" title="별로에요" data-point="1" />
-                  <img src="" alt="2" title="그저 그래요" data-point="2" />
-                  <img src="" alt="3" title="괜찮아요" data-point="3" />
-                  <img src="" alt="4" title="good !!" data-point="4" />
-                  <img src="" alt="5" title="greate !!" data-point="5" />
+                  <img
+                    src="./src/assets/images/icon_empty_star.png"
+                    data-point="1"
+                    title="별로에요.."
+                    alt="1"
+                  />
+                  <img
+                    src="./src/assets/images/icon_empty_star.png"
+                    data-point="2"
+                    title="그저 그래요"
+                    alt="2"
+                  />
+                  <img
+                    src="./src/assets/images/icon_empty_star.png"
+                    data-point="3"
+                    title="괜찮아요"
+                    alt="3"
+                  />
+                  <img
+                    src="./src/assets/images/icon_empty_star.png"
+                    data-point="4"
+                    title="좋아요!"
+                    alt="4"
+                  />
+                  <img
+                    src="./src/assets/images/icon_empty_star.png"
+                    data-point="5"
+                    title="완전 강추!!"
+                    alt="5"
+                  />
                 </div>
 
                 <button class="icon-remove-star">
-                  <img src="" alt="별점 제거" />
+                  <img
+                    src="./src/assets/svg/icon_remove_star.svg"
+                    alt="별점 제거"
+                  />
                 </button>
               </div>
             </div>
