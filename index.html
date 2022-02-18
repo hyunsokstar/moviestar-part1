@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 별점 평가 하기</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="movie-container">
+        <section class="movie">
+          <div class="poster-container">
+            <img src="" alt="" />
+          </div>
+          <div class="content">
+            <div class="content-type">
+              <span>드라마</span>
+              <span>전체 이용가</span>
+            </div>
+
+            <h3 class="content-title">파이썬 부트캠프</h3>
+            <div class="content-favorite">
+              <button class="button-recommend">
+                <span>추천합니다</span>
+                <i class="icon-thumbs-up"></i>
+              </button>
+              <button>
+                <span>찜하기</span>
+                <i class="icon-heart"></i>
+              </button>
+            </div>
+            <div class="content-star">
+              <em class="star-average">별점 평균 4.5</em>
+              <div class="star-point-container">
+                <div class="star-background">
+                  <img src="" alt="1" title="별로에요" data-point="1" />
+                  <img src="" alt="2" title="그저 그래요" data-point="2" />
+                  <img src="" alt="3" title="괜찮아요" data-point="3" />
+                  <img src="" alt="4" title="good !!" data-point="4" />
+                  <img src="" alt="5" title="greate !!" data-point="5" />
+                </div>
+
+                <button class="icon-remove-star">
+                  <img src="" alt="별점 제거" />
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
