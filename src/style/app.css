@@ -20,7 +20,6 @@ img {
   align-items: center;
   position: relative;
   margin-left: 64px;
-  border: 1px solid black;
 }
 
 .poster-container {
@@ -31,4 +30,106 @@ img {
   border-radius: 10px;
   border: 1px solid blue;
   overflow: hidden;
+}
+
+.content {
+  width: 608px;
+  height: 500px;
+  background-color: #333;
+  border-radius: 15px;
+  color: #fff;
+  padding: 64px 0 0 266px;
+  box-sizing: border-box;
+}
+
+/* 우측 상단 글자 드라마 | 전체 이용가 부분 CSS 설정 start */
+.content-type span {
+  color: #bdbdbd;
+}
+
+/* 드라마 전체 이용가 사이의 막대바를 before로 설정 */
+.content-type span + span::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  margin: 0px 7px -1px 3px;
+  background-color: #bdbdbd;
+}
+/* 우측 상단 글자 드라마 | 전체 이용가 부분 CSS 설정 end */
+
+.content-title {
+  margin: 13px 0 114px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.content-favorite {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.content-favorite button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.button-recommend .icon-thumbs-up {
+  width: 29px;
+  height: 29px;
+  margin-top: -1px;
+  text-indent: -900px;
+  background: center / contain url(../assets/images/icon_thumbs_up.png)
+    no-repeat;
+}
+
+.button-recommend.on {
+  background-color: #2f80ed;
+}
+
+.button-recommend .icon-thumbs-up {
+  background-image: url(../assets/images/icon_thumbs_up.png);
+}
+
+.button-heart .icon-heart {
+  width: 29px;
+  height: 29px;
+  margin-top: 3px;
+  text-indent: -900px;
+  background: center / contain url(/src/assets/images/icon_heart.png) no-repeat;
+}
+
+.button-heart.on {
+  background-color: #2f80ed;
+}
+
+.button-heart .icon-heart.on {
+  background-image: url(../assets/images/icon_heart_fill.png);
+}
+
+.star-average {
+  display: block;  /* inline 은 margin-bottom 이 작용하지 않는다. */
+  margin-bottom: 16px;
+}
+
+.star-point-container {
+  display: flex;
+  align-items: center;
+}
+
+.star-background img {
+  width: 51px;
+}
+
+.icon-remove-star {
+  width: 22px;
+  height: 22px;
+  margin-left: 11px;
 }
