@@ -94,8 +94,8 @@ img {
   background-color: #2f80ed;
 }
 
-.button-recommend .icon-thumbs-up {
-  background-image: url(../assets/images/icon_thumbs_up.png);
+.button-recommend.on .icon-thumbs-up {
+  background-image: url(../assets/images/icon_thumbs_up_fill.png);
 }
 
 .button-heart .icon-heart {
@@ -107,10 +107,10 @@ img {
 }
 
 .button-heart.on {
-  background-color: #2f80ed;
+  background-color: #EB5757;
 }
 
-.button-heart .icon-heart.on {
+.button-heart.on .icon-heart {
   background-image: url(../assets/images/icon_heart_fill.png);
 }
 
